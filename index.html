@@ -1,0 +1,38 @@
+<html>
+<head>
+<style>
+.box_1 {
+  width: 150px;
+  height: 150px;
+  background-color: tomato;
+  transform-origin: top left;
+  transition: transform .2s;
+}
+.box_1:hover {
+  transform: scale(1.7);
+  cursor: zoom-in;
+}
+.box_1.scale:hover {
+  cursor: zoom-out;
+}
+.box_1 img {
+  width: 150px;
+  height: 150px;
+  z-index:1000;
+}
+.flex{
+display:flex;
+justify-content: start;
+}
+</style>
+</head>
+<body>
+<div class="flex">
+<div class="box_1"><img src="test.jpg"></div>
+<div class="box_1"><img src="test.jpg"></div>
+<div class="box_1"><img src="test.jpg"></div>
+<div class="box_1"><img src="test.jpg"></div>
+</div>
+</body>
+</html>
+
